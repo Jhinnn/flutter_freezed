@@ -52,6 +52,13 @@ WeiboModel weiboModel =
 weiboModel.toJson();
 ```
 
+### 其他
+#### 1.如果需要模型为可变，例如使用 weiboModel.title = "新年快乐"; 则需要将第二步中注解@freezed 修改为@unfreezed
+#### 2.如果变为@unfreezed,同时也不想让其中一个字段可以修改，则字段类型前可以加final 如：required final String time 或 final String time
+#### 3.其他Copy,Deep Copy 见 https://pub.dev/packages/freezed
+
+
+
 
 
 
